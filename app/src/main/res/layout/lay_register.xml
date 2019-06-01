@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#fff"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+            android:text="Hello There !!"
             android:textSize="15sp"
             android:layout_marginTop="25dp"/>
         <LinearLayout
