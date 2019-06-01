@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">semester4</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="profile">Akun</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="event">Event</string>
+    <string name="notification">Notification</string>
+    <string name="setting">Setting</string>
+
+    <!-- User -->
+    <string name="id_user">ID. User</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="register_user">Register </string>
+</resources>
