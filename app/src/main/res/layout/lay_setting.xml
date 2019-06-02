@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.CardView
-            android:layout_width="400dp"
+            android:layout_width="450dp"
             android:layout_height="120dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="80dp">
@@ -34,15 +34,15 @@
                     <ImageView
                         android:layout_width="38dp"
                         android:layout_height="38dp"
-                        android:src="@drawable/ic_search" />
+                        android:src="@drawable/ic_kost" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
-                        android:text="Search"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="20sp"
+                        android:text="Daftar Penghuni"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -56,129 +56,46 @@
                     <ImageView
                         android:layout_width="38dp"
                         android:layout_height="38dp"
-                        android:src="@drawable/ic_set" />
+                        android:src="@drawable/ic_slep" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
-                        android:text="Set"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="38dp"
-                        android:layout_height="38dp"
-                        android:src="@drawable/ic_lap" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
-                        android:text="Comment"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="250dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="54dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="1"
-                        android:text="Daftar Penghuni Kost"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="15dp" />
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="39dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:src="@drawable/ic_more" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="1"
                         android:text="Pengaturan Kost"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="15dp" />
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="39dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:src="@drawable/ic_more" />
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="37dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="1"
-                        android:text="Profil Kamar"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="15dp" />
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="39dp"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_prof" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:src="@drawable/ic_more" />
+                        android:paddingTop="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Profil Kamar"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
-
         </android.support.v7.widget.CardView>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="62dp"
+            android:layout_marginLeft="80dp"
             android:layout_marginTop="590dp"
             android:orientation="horizontal">
 
@@ -192,7 +109,6 @@
                 android:textColor="@color/white"
                 android:textSize="20dp" />
         </LinearLayout>
-
 
         <android.support.design.widget.BottomNavigationView
             android:id="@+id/bottom_navigation"
