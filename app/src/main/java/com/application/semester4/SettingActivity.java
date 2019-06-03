@@ -11,16 +11,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
 
 public class SettingActivity extends AppCompatActivity {
     private SessionHandler session;
+    private Toolbar toolbar;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lay_setting);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
         session = new SessionHandler(getApplicationContext());
-        User user = session.getUserDetails();
 
 
         Button logoutBtn = findViewById(R.id.btnLogout);
@@ -64,5 +70,8 @@ public class SettingActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
     }
+
 }

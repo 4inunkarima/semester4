@@ -12,10 +12,16 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class DashboardActivity extends AppCompatActivity {
+    private SessionHandler session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lay_nav);
+        session = new SessionHandler(getApplicationContext());
+        User user = session.getUserDetails();
+        TextView welcomeText = findViewById(R.id.welcomeText);
+
+        welcomeText.setText(user.getFullName());
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
