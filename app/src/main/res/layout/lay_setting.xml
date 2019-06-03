@@ -51,6 +51,11 @@
                         android:textStyle="bold" />
 
                 </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/greylight2"
+                    android:focusable="false" />
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -72,7 +77,11 @@
                         android:textSize="15dp"
                         android:textStyle="bold" />
                 </LinearLayout>
-
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/greylight2"
+                    android:focusable="false" />
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
