@@ -21,9 +21,7 @@ public class SettingActivity extends AppCompatActivity {
         setContentView(R.layout.lay_setting);
         session = new SessionHandler(getApplicationContext());
         User user = session.getUserDetails();
-        TextView welcomeText = findViewById(R.id.textView2);
 
-        welcomeText.setText("Welcome "+user.getFullName()+", your session will expire on "+user.getSessionExpiryDate());
 
         Button logoutBtn = findViewById(R.id.btnLogout);
 
