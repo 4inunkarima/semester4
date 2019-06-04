@@ -12,7 +12,6 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar"/>
 
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -21,7 +20,7 @@
             android:layout_width="450dp"
             android:layout_height="120dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp">
+            android:layout_marginTop="25dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -45,7 +44,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="@color/colorPrimaryDark"
                         android:text="Daftar Penghuni"
                         android:textSize="15dp"
                         android:textStyle="bold" />
@@ -72,7 +71,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="@color/colorPrimaryDark"
                         android:text="Peraturan Kost"
                         android:textSize="15dp"
                         android:textStyle="bold" />
@@ -98,7 +97,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="@color/colorPrimaryDark"
                         android:text="Profil User"
                         android:textSize="15dp"
                         android:textStyle="bold" />
@@ -106,19 +105,139 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="301dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
 
-            <Button
-                android:id="@+id/btnLogout"
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="60dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/folder" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Masukkan Data Diri"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:text=" + Tambah"
+                        android:layout_marginTop="33dp"
+                        style="@style/ButtonBorder.Accent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:focusable="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="100dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:focusable="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="200dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:focusable="false" />
+            <View
+                android:layout_width="match_parent"
                 android:layout_marginTop="300dp"
-                android:layout_width="200dp"
-                android:layout_height="63dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="100dp"
-                android:background="@color/colorAccent"
-                android:text="Log Out"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:focusable="false" />
+            <LinearLayout
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/diet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Pesan Makanan"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:text="Pesan"
+                        android:layout_marginTop="33dp"
+                        style="@style/ButtonBorder.Accent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:text="Logout"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginLeft="100dp"
+                    style="@style/ButtonBorder.Accent"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
 
         <android.support.design.widget.BottomNavigationView
             android:id="@+id/bottom_navigation"
@@ -128,6 +247,7 @@
             android:layout_marginBottom="59dp"
             android:background="@color/greylight"
             app:menu="@menu/bottom_navigation" />
+
     </RelativeLayout>
 
 </LinearLayout>
