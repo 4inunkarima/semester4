@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SettingActivity"
-    android:background="@color/greylight"
+    android:background="@color/greylight2"
     android:orientation="vertical">
 
     <include
@@ -46,6 +46,7 @@
                         android:paddingTop="10dp"
                         android:textColor="@color/colorPrimaryDark"
                         android:text="Daftar Penghuni"
+                        android:fontFamily="@font/roboto_regular"
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -73,6 +74,7 @@
                         android:paddingTop="10dp"
                         android:textColor="@color/colorPrimaryDark"
                         android:text="Peraturan Kost"
+                        android:fontFamily="@font/roboto_regular"
                         android:textSize="15dp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -91,14 +93,16 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/girl" />
+                        android:src="@drawable/profgirl" />
 
                     <TextView
+                        android:id="@+id/txtProf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
                         android:textColor="@color/colorPrimaryDark"
-                        android:text="Profil User"
+                        android:text="Profil"
+                        android:fontFamily="@font/roboto_regular"
                         android:textSize="15dp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -108,14 +112,14 @@
         <android.support.v7.widget.CardView
             android:layout_marginTop="200dp"
             android:layout_width="match_parent"
-            android:layout_height="301dp">
+            android:layout_height="401dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
 
                 <LinearLayout
-                    android:layout_width="270dp"
+                    android:layout_width="280dp"
                     android:layout_height="match_parent"
                     android:gravity="center">
                     <LinearLayout
@@ -143,9 +147,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <Button
+                        android:id="@+id/btnTambah"
                         android:layout_width="100dp"
                         android:layout_height="35dp"
                         android:text=" + Tambah"
+                        android:layout_marginLeft="30dp"
                         android:layout_marginTop="33dp"
                         style="@style/ButtonBorder.Accent"/>
 
@@ -175,13 +181,19 @@
                 android:layout_height="1dp"
                 android:background="@color/black"
                 android:focusable="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="400dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:focusable="false" />
             <LinearLayout
                 android:layout_marginTop="100dp"
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
 
                 <LinearLayout
-                    android:layout_width="270dp"
+                    android:layout_width="280dp"
                     android:layout_height="match_parent"
                     android:gravity="center">
 
@@ -209,9 +221,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <Button
+                        android:id="@+id/btnPesan"
                         android:layout_width="100dp"
                         android:layout_height="35dp"
                         android:text="Pesan"
+                        android:layout_marginLeft="30dp"
                         android:layout_marginTop="33dp"
                         style="@style/ButtonBorder.Accent"/>
                 </LinearLayout>
@@ -222,17 +236,60 @@
                 android:layout_marginTop="200dp"
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
 
-                <Button
-                    android:id="@+id/btnLogout"
-                    android:layout_width="200dp"
-                    android:layout_height="35dp"
-                    android:text="Logout"
-                    android:layout_marginTop="33dp"
-                    android:layout_marginLeft="100dp"
-                    style="@style/ButtonBorder.Accent"/>
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/support" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="About us"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:text="Detail"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="33dp"
+                        style="@style/ButtonBorder.Accent"/>
+                </LinearLayout>
+
+
 
             </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="300dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                    <Button
+                        android:id="@+id/btnLogout"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:text="Logout"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="140dp"
+                        style="@style/ButtonBorder.Accent"/>
+
+                </LinearLayout>
 
         </android.support.v7.widget.CardView>
 

@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 public class DashboardActivity extends AppCompatActivity {
     private SessionHandler session;
+    TextView inputfasi , inputbayarmakan , inputbayarkost;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +55,33 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
+        inputbayarkost = (TextView) findViewById(R.id.txtInputBayarKost);
+        inputbayarkost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DashboardActivity.this,InputBayarKost.class);
+                startActivity(intent);
+            }
+        });
+
+        inputbayarmakan = (TextView) findViewById(R.id.txtInputBayarMakan);
+        inputbayarmakan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DashboardActivity.this,InputBayarMakan.class);
+                startActivity(intent);
+            }
+        });
+
+
+        inputfasi = (TextView) findViewById(R.id.txtInputFasi);
+        inputfasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DashboardActivity.this,InputLaporanFasilitas.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

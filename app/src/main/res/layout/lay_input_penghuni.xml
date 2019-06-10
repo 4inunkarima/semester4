@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InputPenghuni"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/kos">
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/folder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/inputData"
+            android:textColor="#90a4ae"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:focusable="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- Data diri penghuni"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="#90a4ae"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Nama Penghuni" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="No ktp"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Alamat"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="No hp"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="No Kamar"
+            android:inputType="number"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- Biaya bulanan"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="#90a4ae"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+                <CheckBox
+                    android:id="@+id/chkKost"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Biaya kost"/>
+
+                <CheckBox
+                    android:id="@+id/chkWifi"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Wifi"
+                    android:layout_marginLeft="20dp"/>
+            <CheckBox
+                android:id="@+id/chkMakan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Biaya Makan"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                style="@style/ButtonBorder.Accent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblTotal"
+                    android:layout_gravity="center"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_regular"/>
+            </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnSubmitmakan"
+                android:layout_width="460dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Submit Data"
+                android:background="@drawable/custombtn"/>
+        </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        </LinearLayout>

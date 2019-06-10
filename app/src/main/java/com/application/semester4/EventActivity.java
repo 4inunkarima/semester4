@@ -16,8 +16,7 @@ public class EventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lay_event);
 
-        TextView title = (TextView) findViewById(R.id.event);
-        title.setText("Event Activity");
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();

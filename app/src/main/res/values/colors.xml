@@ -14,5 +14,7 @@
     <color name="greylight">#fafafa</color>
     <color name="greylight2">#ededed</color>
     <color name="darkergrey">#fafafa</color>
+    <color name="red">#f44336</color>
+
 
 </resources>

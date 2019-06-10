@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 public class SettingActivity extends AppCompatActivity {
     private SessionHandler session;
     private Toolbar toolbar;
+    TextView textView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState){
@@ -28,6 +29,36 @@ public class SettingActivity extends AppCompatActivity {
 
         session = new SessionHandler(getApplicationContext());
 
+        textView = (TextView) findViewById(R.id.txtProf);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(SettingActivity.this,Profile.class);
+                startActivity(intent);
+            }
+        });
+
+        Button pesan = findViewById(R.id.btnPesan);
+
+        pesan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SettingActivity.this, PesanMakan.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        Button tambah = findViewById(R.id.btnTambah);
+
+        tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SettingActivity.this, InputPenghuni.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
         Button logoutBtn = findViewById(R.id.btnLogout);
 

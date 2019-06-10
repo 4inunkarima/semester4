@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".User"
+    tools:context="com.application.semester4.Profile"
     android:background="@color/greylight"
     android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="450dp">
         <LinearLayout
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/background"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:orientation="vertical">
@@ -20,13 +21,13 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/small_usr" />
+                android:src="@drawable/profgirl" />
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="User Oktav"
+                android:text="User Adel"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="21sp"/>
@@ -188,12 +189,11 @@
     </LinearLayout>
 
     <Button
-        android:textColor="@color/white"
-        android:background="@drawable/buttonstylepink"
-        android:layout_marginTop="35dp"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Pesan"
         android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ini Button"/>
+        android:layout_marginTop="35dp"
+        style="@style/ButtonBorder.Accent"/>
 
 </LinearLayout>

@@ -173,6 +173,7 @@
                             android:src="@drawable/add" />
 
                         <TextView
+                            android:id="@+id/txtInputBayarKost"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -337,6 +338,7 @@
                                 android:src="@drawable/add" />
 
                             <TextView
+                                android:id="@+id/txtInputBayarMakan"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
@@ -501,6 +503,7 @@
                                 android:src="@drawable/add" />
 
                             <TextView
+                                android:id="@+id/txtInputFasi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
