@@ -11,6 +11,8 @@
     <string name="event">Event</string>
     <string name="notification">Notification</string>
     <string name="setting">Setting</string>
+    <string name="kost1">Kost I</string>
+    <string name="kost2">Kost II</string>
 
     <!-- User -->
     <string name="id_user">ID. User</string>
