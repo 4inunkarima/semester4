@@ -49,6 +49,17 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
+        Button detail = findViewById(R.id.btnDetail);
+
+        detail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SettingActivity.this, PenghuniActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
         Button logoutBtn = findViewById(R.id.btnLogout);
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
@@ -86,8 +97,6 @@ public class SettingActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-
     }
 
 }
