@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card_view"
+    android:id="@+id/card_pembayaran"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardUseCompatPadding="true"
@@ -31,7 +31,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="@color/black"
-                android:text="Option 1"/>
+                android:text="Nama Penghuni"/>
             <TextView
                 android:id="@+id/txtText2"
                 android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
                 android:layout_below="@id/txtText1"
                 android:layout_toEndOf="@id/imgCard"
                 android:layout_toRightOf="@+id/imgCard"
-                android:text="bla bla" />
+                android:hint="No kamar" />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -55,13 +55,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="Pesanan"/>
+            android:text="Total Biaya"/>
             <TextView
                 android:id="@+id/txtText6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="230dp"
-                android:text="Bubur Ayam"/>
+                android:layout_marginLeft="220dp"
+                android:text="Rp.800.000"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,12 +72,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Tanggal Pesan"/>
+                android:text="Tanggal Bayar"/>
             <TextView
                 android:id="@+id/txtText7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="192dp"
+                android:layout_marginLeft="200dp"
                 android:text="21 May 2019"/>
         </LinearLayout>
         <LinearLayout
@@ -89,14 +89,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Status"/>
+                android:text="Periode"/>
             <TextView
                 android:id="@+id/txtText8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="242dp"
-                android:text="Pending"
-                android:textColor="@color/red"/>
+                android:text="January"
+                android:textColor="@color/design_default_color_primary_dark"/>
         </LinearLayout>
 
     </RelativeLayout>

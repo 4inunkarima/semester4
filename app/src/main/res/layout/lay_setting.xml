@@ -205,15 +205,15 @@
                         android:layout_height="50dp"
                         android:src="@drawable/diet" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:text="Pesan Makanan"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="15dp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Menu Makanan"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -224,7 +224,7 @@
                         android:id="@+id/btnPesan"
                         android:layout_width="100dp"
                         android:layout_height="35dp"
-                        android:text="Pesan"
+                        android:text="Detail"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="33dp"
                         style="@style/ButtonBorder.Accent"/>

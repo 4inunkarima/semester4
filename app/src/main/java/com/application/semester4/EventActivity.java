@@ -35,10 +35,6 @@ public class EventActivity extends AppCompatActivity {
                     case R.id.event:
 
                         break;
-                    case R.id.notifications:
-                        Intent intent2 = new Intent( EventActivity.this, NotificationActivity.class);
-                        startActivity(intent2);
-                        break;
                     case R.id.settings:
                         Intent intent3 = new Intent(EventActivity.this, SettingActivity.class);
                         startActivity(intent3);

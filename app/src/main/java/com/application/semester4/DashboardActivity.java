@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class DashboardActivity extends AppCompatActivity {
     private SessionHandler session;
-    TextView inputfasi , inputbayarmakan , inputbayarkost;
+    TextView inputfasi , inputpesanmakan , inputbayarkost , listpesanan , listpembayaran;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +22,7 @@ public class DashboardActivity extends AppCompatActivity {
         User user = session.getUserDetails();
         TextView welcomeText = findViewById(R.id.welcomeText);
 
-        welcomeText.setText(user.getFullName());
+        welcomeText.setText(user.getUsername());
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -39,10 +39,6 @@ public class DashboardActivity extends AppCompatActivity {
                     case R.id.event:
                         Intent intent1 = new Intent(DashboardActivity.this, EventActivity.class);
                         startActivity(intent1);
-                        break;
-                    case R.id.notifications:
-                        Intent intent2 = new Intent(DashboardActivity.this, NotificationActivity.class);
-                        startActivity(intent2);
                         break;
                     case R.id.settings:
                         Intent intent3 = new Intent(DashboardActivity.this, SettingActivity.class);
@@ -64,15 +60,6 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        inputbayarmakan = (TextView) findViewById(R.id.txtInputBayarMakan);
-        inputbayarmakan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(DashboardActivity.this,InputBayarMakan.class);
-                startActivity(intent);
-            }
-        });
-
 
         inputfasi = (TextView) findViewById(R.id.txtInputFasi);
         inputfasi.setOnClickListener(new View.OnClickListener() {
@@ -83,5 +70,31 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
+        inputpesanmakan = (TextView) findViewById(R.id.txtPesanMakan);
+        inputpesanmakan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DashboardActivity.this,PesanMakan.class);
+                startActivity(intent);
+            }
+        });
+
+        listpesanan = (TextView) findViewById(R.id.txtListPesanan);
+        listpesanan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DashboardActivity.this,ListPesanan.class);
+                startActivity(intent);
+            }
+        });
+
+        listpembayaran = (TextView) findViewById(R.id.txtListPembayaran);
+        listpembayaran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DashboardActivity.this,ListPembayaranku.class);
+                startActivity(intent);
+            }
+        });
     }
 }

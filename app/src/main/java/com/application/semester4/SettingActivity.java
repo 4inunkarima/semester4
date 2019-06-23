@@ -38,17 +38,6 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-        Button pesan = findViewById(R.id.btnPesan);
-
-        pesan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(SettingActivity.this, PesanMakan.class);
-                startActivity(i);
-                finish();
-            }
-        });
-
         Button tambah = findViewById(R.id.btnTambah);
 
         tambah.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +64,7 @@ public class SettingActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(3);
+        MenuItem menuItem = menu.getItem(2);
         menuItem.setChecked(true);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -89,10 +78,6 @@ public class SettingActivity extends AppCompatActivity {
                     case R.id.event:
                         Intent intent1 = new Intent( SettingActivity.this, EventActivity.class);
                         startActivity(intent1);
-                        break;
-                    case R.id.notifications:
-                        Intent intent3 = new Intent(SettingActivity.this, NotificationActivity.class);
-                        startActivity(intent3);
                         break;
                     case R.id.settings:
 

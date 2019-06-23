@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InputBayarKost"></activity>
+        <activity android:name=".ListPembayaranku"></activity>
+        <activity android:name=".InputBayarKost" />
         <activity android:name=".InputBayarMakan" />
         <activity android:name=".InputLaporanFasilitas" />
         <activity android:name=".PesanMakan" />
@@ -28,8 +29,10 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".DashboardActivity" />
+        <activity android:name=".DetailPesanan" />
+        <activity android:name=".DetailPembayaran" />
         <activity android:name=".EventActivity" />
-        <activity android:name=".NotificationActivity" />
+        <activity android:name=".ListPesanan" />
         <activity android:name=".SettingActivity" />
     </application>
 

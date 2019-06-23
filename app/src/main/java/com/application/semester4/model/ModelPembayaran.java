@@ -1,6 +1,6 @@
 package com.application.semester4.model;
 
-public class Model {
+public class ModelPembayaran {
 
     private int listImage;
     private String listTitle1;
@@ -13,7 +13,7 @@ public class Model {
     private String listTitle8;
 
 
-    public Model (int listImage, String listTitle1, String listTitle2, String listTitle3, String listTitle4, String listTitle5, String listTitle6, String listTitle7, String listTitle8){
+    public ModelPembayaran (int listImage, String listTitle1, String listTitle2, String listTitle3, String listTitle4, String listTitle5, String listTitle6, String listTitle7, String listTitle8){
 
         this.listImage = listImage;
         this.listTitle1 = listTitle1;
