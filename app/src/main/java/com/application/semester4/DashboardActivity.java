@@ -8,12 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class DashboardActivity extends AppCompatActivity {
     private SessionHandler session;
-    TextView inputfasi , inputpesanmakan , inputbayarkost , listpesanan , listpembayaran;
+    TextView inputfasi , inputpesanmakan , inputbayarkost , listpesanan , listpembayaran , listfasilitas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +21,7 @@ public class DashboardActivity extends AppCompatActivity {
         User user = session.getUserDetails();
         TextView welcomeText = findViewById(R.id.welcomeText);
 
-        welcomeText.setText(user.getUsername());
+        welcomeText.setText("Welcome "+user.getUsername());
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -83,7 +82,7 @@ public class DashboardActivity extends AppCompatActivity {
         listpesanan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(DashboardActivity.this,ListPesanan.class);
+                Intent intent=new Intent(DashboardActivity.this, DaftarPesanan.class);
                 startActivity(intent);
             }
         });
@@ -92,7 +91,16 @@ public class DashboardActivity extends AppCompatActivity {
         listpembayaran.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(DashboardActivity.this,ListPembayaranku.class);
+                Intent intent=new Intent(DashboardActivity.this, DaftarPembayaran.class);
+                startActivity(intent);
+            }
+        });
+
+        listfasilitas = (TextView) findViewById(R.id.txtListFasilitas);
+        listfasilitas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DashboardActivity.this,DaftarFasilitas.class);
                 startActivity(intent);
             }
         });

@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@android:id/tabhost"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/daftar_barang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greylight2"
+    tools:context="com.application.semester4.DaftarPenghuni">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
 
-        <TabWidget
-            android:id="@android:id/tabs"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listMhsMhs"
+        android:padding="6dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:visibility="gone"/>
 
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="bottom" />
+    <include layout="@layout/loading_and_result"/>
 
-    </LinearLayout>
-</TabHost>
+
+</RelativeLayout>

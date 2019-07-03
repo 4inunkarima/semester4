@@ -15,28 +15,38 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:paddingBottom="15dp">
+        <TextView
+            android:id="@+id/listIdPesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="#000"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"/>
 
             <ImageView
                 android:id="@+id/imgCard"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
-                android:src="@drawable/user"/>
+                android:src="@drawable/woman"/>
             <TextView
-                android:id="@+id/txtText1"
+                android:id="@+id/listNamaPemesan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_toEndOf="@+id/imgCard"
                 android:layout_toRightOf="@+id/imgCard"
                 android:layout_marginTop="10dp"
+                android:textColor="#000"
                 android:fontFamily="@font/roboto_bold"
-                android:textColor="@color/black"
                 android:text="Option 1"/>
             <TextView
-                android:id="@+id/txtText2"
+                android:id="@+id/listKamarPemesan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtText1"
+                android:layout_below="@id/listNamaPemesan"
                 android:layout_toEndOf="@id/imgCard"
                 android:layout_toRightOf="@+id/imgCard"
                 android:text="bla bla" />
@@ -55,11 +65,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_regular"
             android:text="Pesanan"/>
             <TextView
-                android:id="@+id/txtText6"
+                android:id="@+id/listNamaPesanan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:fontFamily="@font/roboto_regular"
                 android:layout_marginLeft="230dp"
                 android:text="Bubur Ayam"/>
         </LinearLayout>
@@ -72,12 +86,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:fontFamily="@font/roboto_regular"
                 android:text="Tanggal Pesan"/>
             <TextView
-                android:id="@+id/txtText7"
+                android:id="@+id/tanggalPesan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="192dp"
+                android:textColor="#000"
+                android:fontFamily="@font/roboto_regular"
                 android:text="21 May 2019"/>
         </LinearLayout>
         <LinearLayout
@@ -89,10 +107,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:fontFamily="@font/roboto_regular"
                 android:text="Status"/>
             <TextView
-                android:id="@+id/txtText8"
+                android:id="@+id/statusPesanan"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto_regular"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="242dp"
                 android:text="Pending"

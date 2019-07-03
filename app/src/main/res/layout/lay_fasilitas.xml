@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/greylight2"
-    tools:context="com.application.semester4.DaftarPenghuni">
+    tools:context="com.application.semester4.DaftarFasilitas">
+
+
 
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listPesanan"
+        android:id="@+id/listFasilitas"
         android:padding="6dp"
         android:clipToPadding="false"
         android:scrollbars="none"

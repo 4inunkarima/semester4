@@ -8,19 +8,19 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.application.semester4.model.PembayaranModel;
+import com.application.semester4.model.ModelFasilitas;
 import com.application.semester4.R;
 
 
 import java.util.ArrayList;
 
-public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
+public class FasilitasAdapter extends ArrayAdapter<ModelFasilitas> {
 
-    private ArrayList<PembayaranModel> list;
+    private ArrayList<ModelFasilitas> list;
     private LayoutInflater inflater;
     private int res;
 
-    public PembayaranAdapter(Context context, int resource, ArrayList<PembayaranModel> list) {
+    public FasilitasAdapter(Context context, int resource, ArrayList<ModelFasilitas> list) {
         super(context, resource, list);
         this.list = list;
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -40,12 +40,10 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
 
             holder = new MyHolder();
 
-            holder.ID = (TextView) convertView.findViewById(R.id.listIdPembayaran);
-            holder.Nama = (TextView) convertView.findViewById(R.id.listNamaPembayar);
-            holder.Kamar = (TextView) convertView.findViewById(R.id.listKamarPembayar);
-            holder.Biaya = (TextView) convertView.findViewById(R.id.listTotalBiaya);
-            holder.Periode = (TextView) convertView.findViewById(R.id.ListPeriode);
-            holder.Tanggal = (TextView) convertView.findViewById(R.id.listTanggalBayar);
+            holder.ID = (TextView) convertView.findViewById(R.id.listIdLaporan);
+            holder.Nama = (TextView) convertView.findViewById(R.id.listNamaFasilitas);
+            holder.Status = (TextView) convertView.findViewById(R.id.listStatus);
+            holder.Keterangan = (TextView) convertView.findViewById(R.id.listKeterangan);
 
             convertView.setTag(holder);
 
@@ -54,12 +52,10 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
             holder = (MyHolder) convertView.getTag();
         }
 
-        holder.ID.setText("# "+list.get(position).getId());
+        holder.ID.setText("# "+list.get(position).getIdFasi());
         holder.Nama.setText(list.get(position).getNama());
-        holder.Kamar.setText("No Kamar : "+list.get(position).getKamar());
-        holder.Biaya.setText("RP. "+list.get(position).getBiay());
-        holder.Periode.setText(list.get(position).getPeriod());
-        holder.Tanggal.setText(list.get(position).getTgl());
+        holder.Status.setText(list.get(position).getStatus());
+        holder.Keterangan.setText(list.get(position).getKeterangan());
 
 
         return convertView;
@@ -71,7 +67,7 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
     }
 
     @Override
-    public void remove(PembayaranModel object) {
+    public void remove(ModelFasilitas object) {
         super.remove(object);
     }
 
@@ -89,10 +85,8 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
 
         TextView ID;
         TextView Nama;
-        TextView Kamar;
-        TextView Biaya;
-        TextView Periode;
-        TextView Tanggal;
+        TextView Status;
+        TextView Keterangan;
 
 
     }

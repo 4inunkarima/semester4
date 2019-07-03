@@ -20,9 +20,20 @@
                 android:id="@+id/imgCard"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
-                android:src="@drawable/user"/>
-            <TextView
-                android:id="@+id/txtText1"
+                android:src="@drawable/woman"/>
+        <TextView
+            android:id="@+id/listIdPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="#000"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <TextView
+                android:id="@+id/listNamaPembayar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -33,10 +44,10 @@
                 android:textColor="@color/black"
                 android:text="Nama Penghuni"/>
             <TextView
-                android:id="@+id/txtText2"
+                android:id="@+id/listKamarPembayar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtText1"
+                android:layout_below="@id/listNamaPembayar"
                 android:layout_toEndOf="@id/imgCard"
                 android:layout_toRightOf="@+id/imgCard"
                 android:hint="No kamar" />
@@ -55,12 +66,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="#000"
             android:text="Total Biaya"/>
             <TextView
-                android:id="@+id/txtText6"
+                android:id="@+id/listTotalBiaya"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="220dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#000"
                 android:text="Rp.800.000"/>
         </LinearLayout>
         <LinearLayout
@@ -72,11 +87,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#000"
                 android:text="Tanggal Bayar"/>
             <TextView
-                android:id="@+id/txtText7"
+                android:id="@+id/listTanggalBayar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#000"
                 android:layout_marginLeft="200dp"
                 android:text="21 May 2019"/>
         </LinearLayout>
@@ -85,13 +104,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="160dp">
             <TextView
-                android:id="@+id/txtText5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#000"
                 android:layout_marginLeft="20dp"
                 android:text="Periode"/>
             <TextView
-                android:id="@+id/txtText8"
+                android:id="@+id/ListPeriode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="242dp"

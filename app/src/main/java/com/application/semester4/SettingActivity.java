@@ -16,7 +16,7 @@ import android.support.v7.widget.Toolbar;
 public class SettingActivity extends AppCompatActivity {
     private SessionHandler session;
     private Toolbar toolbar;
-    TextView textView;
+    TextView textView , listPenghuni;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState){
@@ -38,6 +38,15 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
+        listPenghuni = (TextView) findViewById(R.id.daftarPenghuni);
+        listPenghuni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(SettingActivity.this,DaftarPenghuni.class);
+                startActivity(intent);
+            }
+        });
+
         Button tambah = findViewById(R.id.btnTambah);
 
         tambah.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +63,7 @@ public class SettingActivity extends AppCompatActivity {
         detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SettingActivity.this, PenghuniActivity.class);
+                Intent i = new Intent(SettingActivity.this, ListPenghuni.class);
                 startActivity(i);
                 finish();
             }

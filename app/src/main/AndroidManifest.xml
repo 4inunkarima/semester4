@@ -3,7 +3,6 @@
     package="com.application.semester4">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -13,9 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListPembayaranku"></activity>
         <activity android:name=".InputBayarKost" />
-        <activity android:name=".InputBayarMakan" />
         <activity android:name=".InputLaporanFasilitas" />
         <activity android:name=".PesanMakan" />
         <activity android:name=".InputPenghuni" />
@@ -30,9 +27,15 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".DetailPesanan" />
-        <activity android:name=".DetailPembayaran" />
+        <activity android:name=".ListPembayaran" />
         <activity android:name=".EventActivity" />
-        <activity android:name=".ListPesanan" />
+        <activity android:name=".DaftarPesanan" />
+        <activity android:name=".ListPenghuni" />
+        <activity android:name=".ListFasilitas" />
+        <activity android:name=".ListPesananku" />
+        <activity android:name=".DaftarPembayaran"/>
+        <activity android:name=".DaftarPenghuni" />
+        <activity android:name=".DaftarFasilitas" />
         <activity android:name=".SettingActivity" />
     </application>
 

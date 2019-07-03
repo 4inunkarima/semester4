@@ -1,72 +1,99 @@
 package com.application.semester4.adapter;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.application.semester4.model.PesananModel;
 import com.application.semester4.R;
-import com.application.semester4.model.Model;
+
 
 import java.util.ArrayList;
 
-public class PesananAdapter extends BaseAdapter {
+public class PesananAdapter extends ArrayAdapter<PesananModel> {
 
-    private Context context;
-    private ArrayList<Model> models;
+    private ArrayList<PesananModel> list;
+    private LayoutInflater inflater;
+    private int res;
 
-    public PesananAdapter(Context context, ArrayList<Model> models) {
-        this.context = context;
-        this.models = models;
+    public PesananAdapter(Context context, int resource, ArrayList<PesananModel> list) {
+        super(context, resource, list);
+        this.list = list;
+        this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        this.res = resource;
     }
 
+    @NonNull
     @Override
-    public int getCount() {
-        return models.size();
-    }
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
-    @Override
-    public Object getItem(int position) {
-        return models.get(position);
-    }
+        MyHolder holder = null;
 
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
 
         if (convertView == null) {
-            convertView = View.inflate(context, R.layout.list_items, null);
+
+            convertView = inflater.inflate(res, parent, false);
+
+            holder = new MyHolder();
+
+            holder.ID = (TextView) convertView.findViewById(R.id.listIdPesanan);
+            holder.Nama = (TextView) convertView.findViewById(R.id.listNamaPemesan);
+            holder.Kamar = (TextView) convertView.findViewById(R.id.listKamarPemesan);
+            holder.NamaPesanan = (TextView) convertView.findViewById(R.id.listNamaPesanan);
+            holder.Tanggal = (TextView) convertView.findViewById(R.id.tanggalPesan);
+            holder.Status = (TextView) convertView.findViewById(R.id.statusPesanan);
+
+            convertView.setTag(holder);
+
+        } else {
+
+            holder = (MyHolder) convertView.getTag();
         }
 
-        ImageView listImages = (ImageView) convertView.findViewById(R.id.imgCard);
-        TextView listTitle1 = (TextView) convertView.findViewById(R.id.txtText1);
-        TextView listTitle2 = (TextView) convertView.findViewById(R.id.txtText2);
-        TextView listTitle3 = (TextView) convertView.findViewById(R.id.txtText3);
-        TextView listTitle4 = (TextView) convertView.findViewById(R.id.txtText4);
-        TextView listTitle5 = (TextView) convertView.findViewById(R.id.txtText5);
-        TextView listTitle6 = (TextView) convertView.findViewById(R.id.txtText6);
-        TextView listTitle7 = (TextView) convertView.findViewById(R.id.txtText7);
-        TextView listTitle8 = (TextView) convertView.findViewById(R.id.txtText8);
+        holder.ID.setText("# "+list.get(position).getId());
+        holder.Nama.setText(list.get(position).getNama());
+        holder.Kamar.setText("No Kamar : "+list.get(position).getKamar());
+        holder.NamaPesanan.setText(list.get(position).getMenu());
+        holder.Tanggal.setText(list.get(position).getTgl());
+        holder.Status.setText(list.get(position).getStat());
 
-        Model model = models.get(position);
-        listImages.setImageResource(model.getListImage());
-        listTitle1.setText(model.getListTitle1());
-        listTitle2.setText(model.getListTitle2());
-        listTitle3.setText(model.getListTitle3());
-        listTitle4.setText(model.getListTitle4());
-        listTitle5.setText(model.getListTitle5());
-        listTitle6.setText(model.getListTitle6());
-        listTitle7.setText(model.getListTitle7());
-        listTitle8.setText(model.getListTitle8());
 
         return convertView;
     }
 
-}
+    @Override
+    public int getCount() {
+        return list.size();
+    }
 
+    @Override
+    public void remove(PesananModel object) {
+        super.remove(object);
+    }
+
+    @Override
+    public void clear() {
+        super.clear();
+    }
+
+    @Override
+    public void notifyDataSetChanged() {
+        super.notifyDataSetChanged();
+    }
+
+    static class MyHolder {
+
+        TextView ID;
+        TextView Nama;
+        TextView Kamar;
+        TextView NamaPesanan;
+        TextView Tanggal;
+        TextView Status;
+
+
+    }
+}

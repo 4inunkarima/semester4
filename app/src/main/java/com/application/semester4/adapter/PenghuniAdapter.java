@@ -1,4 +1,4 @@
-package com.application.semester4.adapter;
+    package com.application.semester4.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,19 +8,19 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.application.semester4.model.PembayaranModel;
+import com.application.semester4.model.PenghuniModel;
 import com.application.semester4.R;
 
 
 import java.util.ArrayList;
 
-public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
+public class PenghuniAdapter extends ArrayAdapter<PenghuniModel> {
 
-    private ArrayList<PembayaranModel> list;
+    private ArrayList<PenghuniModel> list;
     private LayoutInflater inflater;
     private int res;
 
-    public PembayaranAdapter(Context context, int resource, ArrayList<PembayaranModel> list) {
+    public PenghuniAdapter(Context context, int resource, ArrayList<PenghuniModel> list) {
         super(context, resource, list);
         this.list = list;
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -40,12 +40,9 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
 
             holder = new MyHolder();
 
-            holder.ID = (TextView) convertView.findViewById(R.id.listIdPembayaran);
-            holder.Nama = (TextView) convertView.findViewById(R.id.listNamaPembayar);
-            holder.Kamar = (TextView) convertView.findViewById(R.id.listKamarPembayar);
-            holder.Biaya = (TextView) convertView.findViewById(R.id.listTotalBiaya);
-            holder.Periode = (TextView) convertView.findViewById(R.id.ListPeriode);
-            holder.Tanggal = (TextView) convertView.findViewById(R.id.listTanggalBayar);
+            holder.ID = (TextView) convertView.findViewById(R.id.listIdPenghuni);
+            holder.Nama = (TextView) convertView.findViewById(R.id.listNamaPenghuni);
+            holder.Kamar = (TextView) convertView.findViewById(R.id.listKamarPenghuni);
 
             convertView.setTag(holder);
 
@@ -55,12 +52,8 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
         }
 
         holder.ID.setText("# "+list.get(position).getId());
-        holder.Nama.setText(list.get(position).getNama());
+        holder.Nama.setText("Nama Penghuni : "+list.get(position).getNama());
         holder.Kamar.setText("No Kamar : "+list.get(position).getKamar());
-        holder.Biaya.setText("RP. "+list.get(position).getBiay());
-        holder.Periode.setText(list.get(position).getPeriod());
-        holder.Tanggal.setText(list.get(position).getTgl());
-
 
         return convertView;
     }
@@ -71,7 +64,7 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
     }
 
     @Override
-    public void remove(PembayaranModel object) {
+    public void remove(PenghuniModel object) {
         super.remove(object);
     }
 
@@ -90,9 +83,6 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
         TextView ID;
         TextView Nama;
         TextView Kamar;
-        TextView Biaya;
-        TextView Periode;
-        TextView Tanggal;
 
 
     }

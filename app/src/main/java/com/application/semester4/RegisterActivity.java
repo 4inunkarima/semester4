@@ -26,11 +26,12 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private EditText etConfirmPassword;
+    private EditText etFullName;
     private String username;
     private String password;
     private String confirmPassword;
     private ProgressDialog pDialog;
-    private String register_url = "http://192.168.43.28/ProjectWebSmstr4/member/register.php";
+    private String register_url = "http://192.168.100.8/ProjectWebSmstr4/member/register.php";
     private SessionHandler session;
 
     @Override
@@ -50,8 +51,8 @@ public class RegisterActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
-                //startActivity(i);
+                Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(i);
                 finish();
             }
         });
@@ -114,7 +115,7 @@ public class RegisterActivity extends AppCompatActivity {
                             //Check if user got registered successfully
                             if (response.getInt(KEY_STATUS) == 0) {
                                 //Set the user session
-                                session.loginUser(username,username);
+                                session.loginUser(username);
                                 loadDashboard();
 
                             }else if(response.getInt(KEY_STATUS) == 1){
@@ -153,6 +154,7 @@ public class RegisterActivity extends AppCompatActivity {
      * @return
      */
     private boolean validateInputs() {
+
         if (KEY_EMPTY.equals(username)) {
             etUsername.setError("Username cannot be empty");
             etUsername.requestFocus();

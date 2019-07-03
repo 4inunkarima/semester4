@@ -20,7 +20,6 @@ import org.json.JSONObject;
 public class LoginActivity extends AppCompatActivity {
     private static final String KEY_STATUS = "status";
     private static final String KEY_MESSAGE = "message";
-    private static final String KEY_FULL_NAME = "full_name";
     private static final String KEY_USERNAME = "username";
     private static final String KEY_PASSWORD = "password";
     private static final String KEY_EMPTY = "";
@@ -29,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     private String username;
     private String password;
     private ProgressDialog pDialog;
-    private String login_url = "http://192.168.43.28/member/login.php";
+    private String login_url = "http://192.168.100.8/ProjectWebSmstr4/member/login.php";
     private SessionHandler session;
 
     @Override
@@ -37,10 +36,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         session = new SessionHandler(getApplicationContext());
 
-        if (session.isLoggedIn()){
+        if(session.isLoggedIn()){
             loadDashboard();
         }
-
         setContentView(R.layout.lay_login);
 
         etUsername = findViewById(R.id.etLoginUsername);
@@ -75,10 +73,11 @@ public class LoginActivity extends AppCompatActivity {
     /**
      * Launch Dashboard Activity on Successful Login
      */
-    private void loadDashboard(){
+    private void loadDashboard() {
         Intent i = new Intent(getApplicationContext(), DashboardActivity.class);
         startActivity(i);
         finish();
+
     }
 
     /**
@@ -94,10 +93,10 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void login(){
+    private void login() {
         displayLoader();
         JSONObject request = new JSONObject();
-        try{
+        try {
             //Populate the request parameters
             request.put(KEY_USERNAME, username);
             request.put(KEY_PASSWORD, password);
@@ -114,7 +113,7 @@ public class LoginActivity extends AppCompatActivity {
                             //Check if user got logged in successfully
 
                             if (response.getInt(KEY_STATUS) == 0) {
-                                session.loginUser(username,response.getString(KEY_FULL_NAME));
+                                session.loginUser(username);
                                 loadDashboard();
 
                             }else{

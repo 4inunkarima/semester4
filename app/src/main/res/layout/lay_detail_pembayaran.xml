@@ -137,7 +137,7 @@
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="15dp"
-                android:text="Batalakan Pesanan"/>
+                android:text="Batalakan Pembayaran"/>
             <ImageView
                 android:id="@+id/imgSuccess"
                 android:layout_width="wrap_content"
