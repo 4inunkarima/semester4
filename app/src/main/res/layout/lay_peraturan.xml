@@ -10,7 +10,7 @@
         <FrameLayout
             android:orientation="vertical"
             android:id="@+id/flcontent"
-            android:background="@color/greylight2"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -37,7 +37,7 @@
                     android:fontFamily="@font/roboto_bold"
                     android:text="Halo penghuni baru !!"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="25sp" />
+                    android:textSize="30dp" />
                 <TextView
                     android:id="@+id/welcomeText"
                     android:layout_marginTop="10dp"
@@ -47,17 +47,137 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="17sp"/>
+                    android:textSize="20sp"/>
             </RelativeLayout>
-            <TextView
-                android:layout_marginLeft="10dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginTop="250dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="15dp"
+                        android:text="1. Tamu pria/laki-laki dilarang masuk."                     android:textColor="@color/black" />
+                </LinearLayout>
+                <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:textColor="@color/colorPrimary"
-                android:layout_marginTop="260dp"
-                android:text="baebkbakdhshjcsvhjcvjsvcjhsvjg b ihfihi fiifh wsfksf bjshfjvbdjhfvbdhfysejcjsdhhchjdbvjhdxhjvbxhjvhjsdfjgdjvbhjdbvhjdvxdhjxbvhjbdhjfbjdfjdhsbfjesjfesjfvhsvcjhsdubdhjvbjhvhjvsffjhevfjvsjhcshvcjhvhfjfcjyshcvxnvchvferuyfgcvnxzcghzshcsvchzvchvhschsvcxzvcjdvjhchvcdjvdjcbdfhjfffhdfhdffbhbhjvfbhfbhhbbbnbnbndfbnbnbfbhjfhjfbhbnhhcsbfd cfndvfdsjjifvgdhsjehfrduyfecibcbfjwegaxiabf usygf sy" />
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="2. Batas tamu pria/laki-laki pada kursi yang terletak sebelum area kamar kost."
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="3. Dilarang merokok selama berada didalam area kost (rokok hisap maupun rokok electric."
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="4. Dilarang membawa tamu bermalam baik pria ataupun wanita."
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="5. Waktu maksimal bertamu yaitu berkisar waktu 22.00 WIB, dilain waktu yang telah disebutkan harap melakukan konfirmasi kepada pemilik kost."
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="6. Dilarang bertindak anarkis antar sesama anak kost."
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="7. Tidak diperbolehkan minum minuman beralkohol/minuman keras selama berada didalam kost."
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="     Demikian peraturan ini dibuat semata-mata untuk menjaga keamanan dan kenyamanan bersama, peraturan juga dibuat untuk selalu dipatuhi. Terimakasih."
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
         </FrameLayout>
     </ScrollView>
 </RelativeLayout>
