@@ -31,7 +31,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String password;
     private String confirmPassword;
     private ProgressDialog pDialog;
-    private String register_url = "http://192.168.100.8/ProjectWebSmstr4/member/register.php";
+    private String register_url = "http://192.168.43.248/ProjectWebSmstr4/member/register.php";
     private SessionHandler session;
 
     @Override

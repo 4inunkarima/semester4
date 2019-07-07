@@ -16,7 +16,7 @@ import android.support.v7.widget.Toolbar;
 public class SettingActivity extends AppCompatActivity {
     private SessionHandler session;
     private Toolbar toolbar;
-    TextView textView , listPenghuni;
+    TextView textView , listPenghuni, menuactivity, peraturan, about;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState){
@@ -34,6 +34,33 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(SettingActivity.this,Profile.class);
+                startActivity(intent);
+            }
+        });
+
+        menuactivity = (TextView) findViewById(R.id.btnPesan);
+        menuactivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(SettingActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        peraturan = (TextView) findViewById(R.id.btnPeraturan);
+        peraturan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(SettingActivity.this, PeraturanActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        about = (TextView) findViewById(R.id.btnDetail);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(SettingActivity.this, AboutActivity.class);
                 startActivity(intent);
             }
         });
