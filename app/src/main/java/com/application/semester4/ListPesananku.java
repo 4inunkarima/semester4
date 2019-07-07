@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class ListPesananku extends AppCompatActivity {
 
-    public static final String ROOT_URL = "http://10.208.215.226/ProjectWebSmstr4/member/";
+    public static final String ROOT_URL = "http://10.208.67.178/ProjectWebSmstr4/member/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
