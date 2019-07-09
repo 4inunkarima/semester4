@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class ListPenghuni extends AppCompatActivity {
 
-    public static final String ROOT_URL = "http://192.168.43.28/ProjectWebSmstr4/member/";
+    public static final String ROOT_URL = "http://10.10.3.224/ProjectWebSmstr4/member/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
