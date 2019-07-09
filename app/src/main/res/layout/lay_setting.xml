@@ -58,6 +58,7 @@
                     android:background="@color/greylight2"
                     android:focusable="false" />
                 <LinearLayout
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -65,11 +66,13 @@
                     android:orientation="vertical">
 
                     <ImageView
+
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/rules" />
 
                     <TextView
+                        android:id="@+id/btnPeraturan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
