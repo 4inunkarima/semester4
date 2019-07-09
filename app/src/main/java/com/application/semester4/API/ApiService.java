@@ -10,8 +10,13 @@ import com.application.semester4.model.PesananModel;
 
 import java.util.List;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 /**
  * Created by JhonDev on 05/10/2016.
@@ -37,11 +42,16 @@ public interface ApiService {
     @GET("laporan_fasilitas.php")
     Call<List<ModelFasilitas>> getSemuaFasilitas();
 
-    @GET("daftar_pesanan.php")
+    @GET("daftar_pesanan.php?nama_pemesan=Wanda Nur Aini")
     Call<List<PesananModel>> getSemuaPesanan();
+    @GET("detail_pesanan.php")
+    Call<List<PesananModel>> getSingleData(@Query("id_pesanan") String id);
 
-    @GET("pembayaran.php")
+    @GET("pembayaran.php?nama_pembayar=Wanda Nur Aini")
     Call<List<PembayaranModel>> getSemuaPembayaran();
+    @GET("detail_pembayaran.php")
+    Call<List<PembayaranModel>> getDetailPembayaran(@Query("id_pembayaran") String id);
+
 
 //    @GET("single_data.php")
 //    Call<List<ModelData>> getSingleData(@Query("id_barang") String id);

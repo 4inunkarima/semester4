@@ -27,14 +27,15 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".DetailPesanan" />
+        <activity android:name=".DetailPembayaran" />
         <activity android:name=".ListPembayaran" />
-        <activity android:name=".EventActivity" />
         <activity android:name=".DaftarPesanan" />
         <activity android:name=".ListPenghuni" />
         <activity android:name=".ListFasilitas" />
         <activity android:name=".ListPesananku" />
         <activity android:name=".DaftarPembayaran"/>
         <activity android:name=".DaftarPenghuni" />
+        <activity android:name=".InputLaporan" />
         <activity android:name=".DaftarFasilitas" />
         <activity android:name=".SettingActivity" />
     </application>

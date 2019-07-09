@@ -61,41 +61,51 @@
         android:layout_height="match_parent"
         android:background="@color/white"
         android:orientation="vertical">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_height="wrap_content"
-            android:drawablePadding="10dp"
-            android:hint="Nama Penghuni" />
-
-       <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-           android:id="@+id/pilihFasi"
-           android:layout_width="300dp"
-           android:layout_height="wrap_content"
-           android:layout_margin="25dp"
-           android:hint="Daftar Fasilitas"
-           android:textColorHint="#90a4ae"/>
 
         <EditText
+            android:id="@+id/keluhan"
             android:layout_width="match_parent"
             android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
             android:drawablePadding="10dp"
             android:hint="Keluhan" />
 
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/pilihFasi"
+            android:layout_width="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:hint="Daftar Fasilitas"
+            android:textColorHint="#90a4ae"/>
+
         <LinearLayout
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="50dp">
             <Button
-                android:id="@+id/btnSubmitmakan"
-                android:layout_width="460dp"
-                android:layout_marginTop="30dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="8dp"
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:text="Submit Data"
-                android:background="@drawable/custombtn"/>
+                android:id="@+id/kirim"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_done_white_24dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/shape_rectangle_round_primary"
+                android:text="Kirim"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/cancel"
+                android:textColor="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_cancel_black_24dp"
+                android:paddingLeft="10dp"
+                android:text="Cancel"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_rectangle_round_white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
 

@@ -6,10 +6,6 @@
         android:title="@string/dashboard"
         android:icon="@drawable/ic_dashboard"/>
 
-    <item
-        android:id="@+id/event"
-        android:title="@string/event"
-        android:icon="@drawable/ic_event"/>
 
     <item
         android:id="@+id/settings"

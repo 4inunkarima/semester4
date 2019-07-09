@@ -119,6 +119,10 @@ public class DaftarPesanan extends AppCompatActivity implements AdapterView.OnIt
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        TextView ids = (TextView) view.findViewById(R.id.listshw_id);
+        Intent intent = new Intent(DaftarPesanan.this, DetailPesanan.class);
+        intent.putExtra(PesananModel.id_pesanan, ids.getText().toString());
+        startActivityForResult(intent, 1);
     }
 
     @Override
@@ -129,4 +133,5 @@ public class DaftarPesanan extends AppCompatActivity implements AdapterView.OnIt
             setup();
         }
     }
+
 }

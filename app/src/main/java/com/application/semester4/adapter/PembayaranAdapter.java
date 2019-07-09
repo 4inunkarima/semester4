@@ -41,6 +41,7 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
             holder = new MyHolder();
 
             holder.ID = (TextView) convertView.findViewById(R.id.listIdPembayaran);
+            holder.IDPUSH = (TextView) convertView.findViewById(R.id.listID1);
             holder.Nama = (TextView) convertView.findViewById(R.id.listNamaPembayar);
             holder.Kamar = (TextView) convertView.findViewById(R.id.listKamarPembayar);
             holder.Biaya = (TextView) convertView.findViewById(R.id.listTotalBiaya);
@@ -55,9 +56,10 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
         }
 
         holder.ID.setText("# "+list.get(position).getId());
+        holder.IDPUSH.setText(list.get(position).getId());
         holder.Nama.setText(list.get(position).getNama());
         holder.Kamar.setText("No Kamar : "+list.get(position).getKamar());
-        holder.Biaya.setText("RP. "+list.get(position).getBiay());
+        holder.Biaya.setText("RP. "+list.get(position).getBiaya());
         holder.Periode.setText(list.get(position).getPeriod());
         holder.Tanggal.setText(list.get(position).getTgl());
 
@@ -88,6 +90,7 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
     static class MyHolder {
 
         TextView ID;
+        TextView IDPUSH;
         TextView Nama;
         TextView Kamar;
         TextView Biaya;

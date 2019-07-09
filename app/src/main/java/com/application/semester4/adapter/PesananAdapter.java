@@ -41,6 +41,7 @@ public class PesananAdapter extends ArrayAdapter<PesananModel> {
             holder = new MyHolder();
 
             holder.ID = (TextView) convertView.findViewById(R.id.listIdPesanan);
+            holder.IDPUSH = (TextView) convertView.findViewById(R.id.listshw_id);
             holder.Nama = (TextView) convertView.findViewById(R.id.listNamaPemesan);
             holder.Kamar = (TextView) convertView.findViewById(R.id.listKamarPemesan);
             holder.NamaPesanan = (TextView) convertView.findViewById(R.id.listNamaPesanan);
@@ -55,6 +56,7 @@ public class PesananAdapter extends ArrayAdapter<PesananModel> {
         }
 
         holder.ID.setText("# "+list.get(position).getId());
+        holder.IDPUSH.setText(list.get(position).getId());
         holder.Nama.setText(list.get(position).getNama());
         holder.Kamar.setText("No Kamar : "+list.get(position).getKamar());
         holder.NamaPesanan.setText(list.get(position).getMenu());
@@ -88,6 +90,7 @@ public class PesananAdapter extends ArrayAdapter<PesananModel> {
     static class MyHolder {
 
         TextView ID;
+        TextView IDPUSH;
         TextView Nama;
         TextView Kamar;
         TextView NamaPesanan;

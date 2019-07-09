@@ -35,10 +35,8 @@ public class DashboardActivity extends AppCompatActivity {
                     case R.id.dashboard:
 
                         break;
-                    case R.id.event:
-                        Intent intent1 = new Intent(DashboardActivity.this, EventActivity.class);
-                        startActivity(intent1);
-                        break;
+
+
                     case R.id.settings:
                         Intent intent3 = new Intent(DashboardActivity.this, SettingActivity.class);
                         startActivity(intent3);

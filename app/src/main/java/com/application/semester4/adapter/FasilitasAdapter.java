@@ -52,7 +52,7 @@ public class FasilitasAdapter extends ArrayAdapter<ModelFasilitas> {
             holder = (MyHolder) convertView.getTag();
         }
 
-        holder.ID.setText("# "+list.get(position).getIdFasi());
+        holder.ID.setText(list.get(position).getIdFasi());
         holder.Nama.setText(list.get(position).getNama());
         holder.Status.setText(list.get(position).getStatus());
         holder.Keterangan.setText(list.get(position).getKeterangan());

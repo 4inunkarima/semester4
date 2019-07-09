@@ -16,6 +16,11 @@
         android:background="@color/white"
         android:paddingBottom="15dp">
         <TextView
+            android:id="@+id/listshw_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+        <TextView
             android:id="@+id/listIdPesanan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,7 +58,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/greylight2"
+            android:background="#d8d8e3"
             android:layout_marginTop="75dp"
             android:focusable="false" />
         <LinearLayout

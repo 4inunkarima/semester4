@@ -1,8 +1,11 @@
 package com.application.semester4;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -21,5 +24,16 @@ public class InputLaporanFasilitas extends AppCompatActivity {
         pilihfasi = (MaterialBetterSpinner) findViewById(R.id.pilihFasi);
         adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1,FASILIST);
         pilihfasi.setAdapter(adapter);
+
+        Button kirim = findViewById(R.id.kirim);
+
+        kirim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(InputLaporanFasilitas.this, DashboardActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
     }
 }

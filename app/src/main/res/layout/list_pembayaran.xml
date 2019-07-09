@@ -16,6 +16,13 @@
         android:background="@color/white"
         android:paddingBottom="15dp">
 
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/listID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
             <ImageView
                 android:id="@+id/imgCard"
                 android:layout_width="80dp"
@@ -54,7 +61,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/greylight2"
+            android:background="#d8d8e3"
             android:layout_marginTop="75dp"
             android:focusable="false" />
         <LinearLayout

@@ -30,7 +30,7 @@ public class PembayaranModel {
     @Expose
     private String tanggalPembayaran;
 
-    public static final String id_pembayaran = "ID_PEMBAYARAN";
+    public static final String id_pembayaran= "ID_PEMBAYARAN";
     public static final String nama_pembayar = "ID_PEMBAYARAN";
     public static final String kamar_pembayar = "ID_PEMBAYARAN";
     public static final String biaya_pembayaran = "ID_PEMBAYARAN";
@@ -105,7 +105,7 @@ public class PembayaranModel {
      * @return
      *     The biay
      */
-    public String getBiay() {
+    public String getBiaya() {
         return biayaPembayaran;
     }
 

@@ -76,7 +76,7 @@ public class DaftarPembayaran extends AppCompatActivity implements AdapterView.O
                                 response.body().get(i).getId(),
                                 response.body().get(i).getNama(),
                                 response.body().get(i).getKamar(),
-                                response.body().get(i).getBiay(),
+                                response.body().get(i).getBiaya(),
                                 response.body().get(i).getPeriod(),
                                 response.body().get(i).getTgl());
                         dataPembayaran.add(data);
@@ -117,6 +117,10 @@ public class DaftarPembayaran extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        TextView ids = (TextView) view.findViewById(R.id.listID1);
+        Intent intent = new Intent(DaftarPembayaran.this, DetailPembayaran.class);
+        intent.putExtra(PembayaranModel.id_pembayaran, ids.getText().toString());
+        startActivityForResult(intent, 1);
     }
 
     @Override

@@ -74,7 +74,7 @@ public class SettingActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(2);
+        MenuItem menuItem = menu.getItem(1);
         menuItem.setChecked(true);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -85,10 +85,7 @@ public class SettingActivity extends AppCompatActivity {
                         Intent intent0 = new Intent(SettingActivity.this, DashboardActivity.class);
                         startActivity(intent0);
                         break;
-                    case R.id.event:
-                        Intent intent1 = new Intent( SettingActivity.this, EventActivity.class);
-                        startActivity(intent1);
-                        break;
+
                     case R.id.settings:
 
                         break;
