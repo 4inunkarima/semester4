@@ -61,29 +61,22 @@
         android:layout_height="match_parent"
         android:background="@color/white"
         android:orientation="vertical">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_height="wrap_content"
-            android:drawablePadding="10dp"
-            android:hint="Nama Penghuni" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_height="wrap_content"
-            android:drawablePadding="10dp"
-            android:hint="Nomor Kamar"
-            android:inputType="number"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_height="wrap_content"
-            android:drawablePadding="10dp"
-            android:hint="Total Biaya"
-            android:inputType="number"/>
 
+        <EditText
+            android:id="@+id/KamarPembayar"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="NoKamar" />
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/TotalBayar"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:hint="Biaya"
+            android:textColorHint="#90a4ae"/>
         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
             android:id="@+id/pilihPeriode"
             android:layout_marginTop="30dp"

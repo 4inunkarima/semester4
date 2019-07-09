@@ -88,7 +88,7 @@ public class DaftarFasilitas extends AppCompatActivity implements AdapterView.On
 
                     if (adapter.getCount() < 1 ) {
                         layout_loading.setVisibility(View.VISIBLE);
-                        String error = "Daftar mahasiswa Kosong";
+                        String error = "Daftar Kosong";
                         text_load.setText(error);
                         Bitmap icon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_data_kosong);
                         icon_load.setImageBitmap(icon);

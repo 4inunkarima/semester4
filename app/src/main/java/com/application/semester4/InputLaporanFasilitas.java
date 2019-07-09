@@ -1,5 +1,6 @@
 package com.application.semester4;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +13,7 @@ import android.widget.Spinner;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 public class InputLaporanFasilitas extends AppCompatActivity {
-    String [] FASILIST = {"Pilih Menu","Kursi","Kompor","Mesin Cuci","Meja kamar"};
+    String [] FASILIST = {"Pilih Menu","Sapu","Mesin Cuci","Kompor","Kasur","Meja Kamar","Galon Air","Gayung","Kursi"};
     MaterialBetterSpinner pilihfasi;
     ArrayAdapter<String> adapter;
 
@@ -30,6 +31,8 @@ public class InputLaporanFasilitas extends AppCompatActivity {
         kirim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ProgressDialog dialog = ProgressDialog.show(InputLaporanFasilitas.this, "",
+                        "Loading. Please wait...", true);
                 Intent i = new Intent(InputLaporanFasilitas.this, DashboardActivity.class);
                 startActivity(i);
                 finish();

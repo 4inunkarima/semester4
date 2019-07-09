@@ -83,18 +83,22 @@ public class DaftarPembayaran extends AppCompatActivity implements AdapterView.O
                         Log.d("RESPON", "onResponse: " + response.body().get(i).getId());
 
                     }
+                    layout_loading.setVisibility(View.GONE);
                     listview.setVisibility(View.VISIBLE);
                     adapter = new PembayaranAdapter(DaftarPembayaran.this, R.layout.list_pembayaran, dataPembayaran );
                     listview.setAdapter(adapter);
 
+
+
                     if (adapter.getCount() < 1 ) {
                         layout_loading.setVisibility(View.VISIBLE);
-                        String error = "Daftar mahasiswa Kosong";
+                        String error = "Daftar Kosong";
                         text_load.setText(error);
                         Bitmap icon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_data_kosong);
                         icon_load.setImageBitmap(icon);
                     }
                 } else {
+                    layout_loading.setVisibility(View.VISIBLE);
                     String error = "Error Retrive Data from Server !!!";
                     text_load.setText(error);
                     Bitmap icon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_network);

@@ -89,7 +89,7 @@ public class DaftarPesanan extends AppCompatActivity implements AdapterView.OnIt
 
                     if (adapter.getCount() < 1 ) {
                         layout_loading.setVisibility(View.VISIBLE);
-                        String error = "Daftar mahasiswa Kosong";
+                        String error = "Daftar  Kosong";
                         text_load.setText(error);
                         Bitmap icon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_data_kosong);
                         icon_load.setImageBitmap(icon);

@@ -40,7 +40,7 @@ public class PembayaranAdapter extends ArrayAdapter<PembayaranModel> {
 
             holder = new MyHolder();
 
-            holder.ID = (TextView) convertView.findViewById(R.id.listIdPembayaran);
+           holder.ID = (TextView) convertView.findViewById(R.id.listIdPembayaran);
             holder.IDPUSH = (TextView) convertView.findViewById(R.id.listID1);
             holder.Nama = (TextView) convertView.findViewById(R.id.listNamaPembayar);
             holder.Kamar = (TextView) convertView.findViewById(R.id.listKamarPembayar);

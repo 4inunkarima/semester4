@@ -44,6 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:visibility="invisible"
                 android:gravity="right"
                 android:text="#000"
                 android:textColor="#000"
